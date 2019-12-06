@@ -30,7 +30,7 @@ pipeline {
         ''' 
       } 
     }
-    stage("Deploy") {
+    stage("Deploy  ") {
       steps {
         script {
           DEPLOYMENT_ID = sh (returnStdout: true, script: 'aws deploy create-deployment --application-name fco --deployment-group-name DEV --s3-location bucket=ci-workshop-devops,key=fco/Artifact/$BUILD_TAG.zip,bundleType=zip --file-exists-behavior OVERWRITE --region us-east-1').trim()     
