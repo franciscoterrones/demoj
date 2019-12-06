@@ -37,6 +37,16 @@ pipeline {
         }
       }
     }
+    stage ('Push Image') {
+      steps {
+        script {
+          def imageTag = "${IMAGE_TAG}"
+          def imageName = "${IMAGE_NAME}:${imageTag}"
+          def repositoryName = "${AWS_ACCOUNT}.dkr.ecr.${AWS_REGION}.amazonaws.com/${imageName}"
+          sh "docker push ${repositoryName}"
+        }
+      }
+    }
   }
 }
 
