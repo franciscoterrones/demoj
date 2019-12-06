@@ -26,35 +26,7 @@
     "tags": [
       {
         "key": "Name",
-        "value": "atomo/webapp1"
-      },
-      {
-        "key": "Entorno",
-        "value": "%ENVIRONMENTU%"
-      },
-      {
-        "key": "Grupo",
-        "value": "ATOMO"
-      },
-      {
-        "key": "Server Rol",
-        "value": "WEB"
-      },
-      {
-        "key": "Tipo",
-        "value": "Proyecto"
-      },
-      {
-        "key": "Contacto",
-        "value": "Karina Aguilar"
-      },
-      {
-        "key": "CTLAdmin",
-        "value": "SI"
-      },
-      {
-        "key": "Direccion",
-        "value": "Centro de Soluciones"
-      }
+        "value": "Fco-Web"
+      }      
     ]
   }
